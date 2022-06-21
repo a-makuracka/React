@@ -12,14 +12,14 @@ export const statusReducer = (state = initialState, action) => {
             return {  
                 ...state,
                 status: "main",
-                //all_trips: action.properties
+                all_trips: action.properties
             }
         }
         case "trip":
             return {
                 ...state,
                 status: "trip",
-                //trip: action.properties
+                trip: action.properties
             }
         default: {
             return state;

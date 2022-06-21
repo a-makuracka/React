@@ -10,7 +10,7 @@ import { allTripsSelector } from '../../selectors/allTripsSelector'
 export const Main = () => {
     let arr_trips = [];
     const selector_trips = useSelector(allTripsSelector);
-    arr_trips.push(<Tripbox
+    /*arr_trips.push(<Tripbox
         id={1}
         key={1}
         name={'Góry szerokie'}
@@ -27,21 +27,29 @@ export const Main = () => {
         img_text={"goooooooooooooooooooooooooooory"}
         desc={"opiiiiissssssssssssssssssssssssssssssssssssssssss"}
         price={45}>
-        </Tripbox>)
-    /*console.log(selector_trips);
+        </Tripbox>)*/
+    console.log(selector_trips);
     for (let trip of selector_trips) {
+        console.log(trip.id);
+        console.log(trip.key);
+        console.log(trip.nazwa);
+        console.log(trip.obrazek);
+        console.log(trip.obrazek_tekst);
+        console.log(trip.opis);
+        console.log(trip.cena);
+        
         arr_trips.push(
             <Tripbox
                 id={trip.id}
-                key={trip.key}
-                name={trip.name}
-                img={trip.img}
-                img_text={trip.img_text}
-                desc={trip.desc}
-                price={trip.price}>
+                key={trip.id}
+                name={trip.nazwa}
+                img={trip.obrazek}
+                img_text={trip.obrazek_tekst}
+                desc={trip.opis}
+                price={trip.cena}>
             </Tripbox>
         )
-    }*/
+    }
     return (
         <div className="main">
             <Header className="header"></Header>

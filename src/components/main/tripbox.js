@@ -19,7 +19,7 @@ export const Tripbox = (props) => {
                     <button onClick={() => {
                             dispatch({
                                 type: "trip",
-                                // properties: props.id
+                                properties: props.id
                             })
                         }}>
                         Zarezerwuj
