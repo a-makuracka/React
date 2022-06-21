@@ -1,6 +1,6 @@
 import './tripbox_style.css'
 import { useDispatch } from 'react-redux'
-import { getTrip } from '../../thunks/getTrip'
+import { getTrip } from '../../db/getTrip'
 
 export const Tripbox = (props) => {
     const dispatch = useDispatch();

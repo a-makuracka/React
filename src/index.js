@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 import { statusReducer } from './reducers/statusReducer';
 import thunk from 'redux-thunk';
 import { applyMiddleware, createStore } from 'redux';
-import { getAllTrips } from './thunks/getAllTrips.js';
+import { getAllTrips } from './db/getAllTrips.js';
 
 
 let store = createStore(statusReducer, applyMiddleware(thunk));
