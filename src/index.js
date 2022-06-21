@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { App } from './components/App';
 import { Provider } from 'react-redux'
-import { modeReducer } from './reducers/modeReducer';
+import { statusReducer } from './reducers/statusReducer';
 import thunk from 'redux-thunk';
 import { applyMiddleware, createStore } from 'redux';
 import { getAllTrips } from './thunks/getAllTrips.js';
 
 
-let store = createStore(modeReducer, applyMiddleware(thunk));
+let store = createStore(statusReducer, applyMiddleware(thunk));
 store.dispatch(getAllTrips());
 
 ReactDOM.render(

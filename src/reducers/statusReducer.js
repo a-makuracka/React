@@ -1,24 +1,24 @@
 const initialState = {
-    mode : "main",
+    status : "main",
     trip: null,
     all_trips: [],
 }
 
-export const modeReducer = (state = initialState, action) => {
-    console.log(action.mode);
+export const statusReducer = (state = initialState, action) => {
+    console.log(action.status);
     switch (action.type) {
         case "main": {
             console.log("jest main state");
             return {  
                 ...state,
-                mode: "main",
+                status: "main",
                 //all_trips: action.properties
             }
         }
         case "trip":
             return {
                 ...state,
-                mode: "trip",
+                status: "trip",
                 //trip: action.properties
             }
         default: {
