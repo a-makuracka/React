@@ -1,0 +1,1 @@
+export const allTripsSelector = state => state.all_trips;
