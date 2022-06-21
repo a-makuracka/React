@@ -12,16 +12,11 @@ export const Tripbox = (props) => {
                 alt={ props.img_text }>
             </input>
             <div className='description'>
-                <p className='tripTitle'>{props.name}</p>
+                <h2 className='tripTitle'>{props.name}</h2>
                 <p className='tripDesc'>{props.desc}</p>
                 <div className='price'>
-                    <p className='tripDesc'>{props.price}</p>
-                    <button onClick={() => {
-                            dispatch({
-                                type: "trip",
-                                properties: props.id
-                            })
-                        }}>
+                    <h4 className='tripDesc'>{props.price}</h4>
+                    <button onClick={() => dispatch(getTrip(props.id))}>
                         Zarezerwuj
                     </button>
                 </div>
