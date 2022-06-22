@@ -20,12 +20,12 @@ export const Trip = () => {
                 <div className='trip_description'>
                     <h2 className='trip_tripTitle'>{trip.nazwa}</h2>
                     <p className='trip_tripDesc'>{trip.opis}</p>
-                    <div className='trip_price'>
+                    
                         <h4 className='trip_tripDesc'>{trip.cena}</h4>
                         <button className='button_to_form' onClick={() => dispatch({ type: "booking" })}>
                             Zarezerwuj
                         </button>
-                    </div>
+                    
                 </div>
             </div>
             <Footer className="footer"></Footer>
