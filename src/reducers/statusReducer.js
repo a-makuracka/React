@@ -21,6 +21,11 @@ export const statusReducer = (state = initialState, action) => {
                 status: "trip",
                 trip: action.properties
             }
+        case "booking" :
+            return {
+                ...state,
+                status: "booking",
+            }
         default: {
             return state;
         }
