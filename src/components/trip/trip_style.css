@@ -28,7 +28,7 @@ button:hover {
     margin-left: 5%;
     min-height: 100%;
     overflow:auto;
-    padding-bottom:306px;
+    padding-bottom:325px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -5,10 +5,8 @@ const initialState = {
 }
 
 export const statusReducer = (state = initialState, action) => {
-    console.log(action.status);
     switch (action.type) {
         case "main": {
-            console.log("jest main state");
             return {  
                 ...state,
                 status: "main",
